@@ -1,0 +1,204 @@
+ html,body{
+    margin: 0%;
+    box-sizing: border-box;
+    overflow-x: hidden;
+ }
+ :root{
+--text-gray:#3f4954;
+--text-light:#68666da;
+--bg-color:#0f0f0f;
+--white:#fff;
+--sky-color: linear-gradient(120deg, #a1cfdf 0%, #c2e9fb 100%);
+
+ }
+ .nav{
+    background: #fff;
+    padding: 0.2rem;
+    height: 0rem;
+    min-height: 10vh;
+    overflow: hidden;
+ }
+ .nav .toggle-collapse{
+    position: absolute;
+top:0;
+width: 90%;
+cursor: pointer;
+display: none;
+}
+.nav .toggle-collapse .toggle-icons{
+    display: flex;
+    justify-content: flex-end;
+    padding:1.7em 0 ;
+}
+.nav .toggle-collapse .toggle-icons bi{
+    font-size:1.4em ;
+    color: var(--text-gray);
+}
+ a{
+    text-decoration: none;
+    color: var(--text-gray);
+ }
+ h1{
+   font-family:Georgia, 'Times New Roman', Times, serif ;
+   font-size: 2.5rem;
+ }
+ h3{
+   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+   font-size: 1.3rem ;
+ }
+ h2{
+   font-family: Arial, Helvetica, sans-serif;
+ }
+ button.btn{
+   border: none;
+   border-radius: 2rem;
+   padding: 1rem 3rem ;
+   cursor: pointer;
+font-family: Georgia, 'Times New Roman', Times, serif;
+ }
+ ul{
+    list-style: none;
+ }
+ .flex-row{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+ }
+ .nav .nav-brand a{
+    font-size: 1.6rem;
+    padding: 1rem 1rem;
+ 
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif, cursive;
+    display: block;
+ }
+ .collapse{
+   height: 30rem;
+ }
+ .nav .nav-menu{
+    justify-content: space-between;
+ }
+ .nav .nav-item{
+    list-style-type: none;
+    display: flex;
+    margin: 0;
+ }
+ .nav .nav-item .nav-link{
+    padding: 1.6rem 1rem;
+    position: relative; 
+    font-size: 1.1rem;
+ 
+ }
+ .nav .nav-item .nav-link:hover{
+    background-color: midnightblue;
+
+
+ }
+ .nav .nav-item .nav-link  a:hover{
+    color: var(--white);
+ }
+ .nav .social{
+    padding: 1.4rem 0;
+ }
+ .nav .social bi{
+    padding: 0.2rem;
+ }
+ .nav .social .bi:hover{
+color: #a1c4cf;
+ }
+main .site-title{
+   background: url(../assets/Background-image.png);
+   background-size: cover;
+   height: 110vh;
+   display: flex;
+   justify-content: center;
+}
+main .site-title .site-background{
+   padding-top: 10rem;
+   text-align: center;
+   color: var(--white);
+}
+main .site-title h1,h3{
+   margin: .3rem;
+}
+main .site-title .site-background .btn{
+   margin: 1.8rem;
+   background: var(--sky-color);
+}
+main .site-title .btn:hover{
+   background: transparent;
+   color: white;
+   border: 1px solid var(--white);
+
+}
+
+main .blog{
+   background: url(../assets/Abract01.png);
+   background-repeat: no-repeat;
+   background-position: right;
+   color: var(--white);
+   height: 100vh;
+   width: 100%;
+}
+main .blog .blog-post{
+   padding-top: 6rem;
+
+}
+.main .blog-post .blog-content{
+   display: flex;
+   width: 80%;
+   text-align: center;
+   flex-direction: column;
+   margin: 3rem 2rem;
+   box-shadow: 0 15px 20px rgba(0,0,0,0.2) ;
+}
+main .blog-content .blog-title{
+   padding: 2rem 0;
+
+}
+main .blog-content .btn-blog{
+   padding: 7rem 2rem;
+    background: var(--sky-color);
+    margin: 5rem;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ @media only screen and (max-width:750px)
+ {
+    .nav .nav-menu, .nav .nav-item  
+    {
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+    .nav .toggle-collapse{
+        display: initial;
+    }
+ }
